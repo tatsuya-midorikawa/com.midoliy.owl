@@ -9,6 +9,7 @@
     <BaseOutputPath>..\bin</BaseOutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="System.fsi" />
     <Compile Include="System.Console.fsi" />
     <Compile Include="System.fs" />
     <Compile Include="System.Console.fs" />
