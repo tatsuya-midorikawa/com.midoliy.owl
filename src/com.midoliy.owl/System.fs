@@ -19,3 +19,4 @@ module System =
   (*
     Functions
   *)
+  let inline isdefault<'a when 'a : equality> (value: 'a) : bool = value = defaultof<'a>
