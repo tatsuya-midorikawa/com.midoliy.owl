@@ -5,13 +5,34 @@
     <RootNamespace>com.midoliy.owl</RootNamespace>
     <Version>0.0.1</Version>
     <Copyright>© 2022 Tatsuya Midorikawa. All rights rserved</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>midoliy,Linq,fsharp,owl</PackageTags>
+    <PackageProjectUrl>https://github.com/tatsuya-midorikawa/com.midoliy.owl</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tatsuya-midorikawa/com.midoliy.owl</RepositoryUrl>
+    <Description>
+      Owl.core provides aliases for .NET Runtime APIs.
+		</Description>
+    <PackageIcon>owl.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
     <AssemblyName>Owl.core</AssemblyName>
     <BaseOutputPath>..\bin</BaseOutputPath>
+
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="System.fsi" />
     <Compile Include="System.Console.fsi" />
     <Compile Include="System.fs" />
     <Compile Include="System.Console.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\assets\owl.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>
