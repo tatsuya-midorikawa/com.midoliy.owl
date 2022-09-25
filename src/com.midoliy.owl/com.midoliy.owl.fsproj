@@ -14,12 +14,12 @@
 		</Description>
     <PackageIcon>owl.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-
     <AssemblyName>Owl.lib.core</AssemblyName>
     <BaseOutputPath>..\bin</BaseOutputPath>
-
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="System.IO.fsi" />
+    <Compile Include="System.IO.fs" />
     <Compile Include="System.fsi" />
     <Compile Include="System.Console.fsi" />
     <Compile Include="System.fs" />
