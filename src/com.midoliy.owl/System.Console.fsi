@@ -6,11 +6,11 @@ module Console =
 
   val inline clear : unit -> unit
 
-  val inline read : unit -> int
+  val inline readl : unit -> int
   val inline readln : unit -> string
   val inline readkey : unit -> keyinfo
-  val inline printl<'a> : 'a -> unit
-  val inline println<'a> : 'a -> unit
+  val inline writel<'a> : 'a -> unit
+  val inline writeln<'a> : 'a -> unit
 
   val inline bgcolor : color -> unit
   val inline fgcolor : color -> unit
