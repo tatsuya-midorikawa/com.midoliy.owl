@@ -6,7 +6,7 @@
     <Version>0.0.1</Version>
     <Copyright>© 2022 Tatsuya Midorikawa. All rights rserved</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>midoliy,Linq,fsharp,owl</PackageTags>
+    <PackageTags>midoliy,fsharp,owl,alias</PackageTags>
     <PackageProjectUrl>https://github.com/tatsuya-midorikawa/com.midoliy.owl</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tatsuya-midorikawa/com.midoliy.owl</RepositoryUrl>
     <Description>
@@ -15,7 +15,7 @@
     <PackageIcon>owl.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
 
-    <AssemblyName>Owl.core</AssemblyName>
+    <AssemblyName>Owl.lib.core</AssemblyName>
     <BaseOutputPath>..\bin</BaseOutputPath>
 
   </PropertyGroup>

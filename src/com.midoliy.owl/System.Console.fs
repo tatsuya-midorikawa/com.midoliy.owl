@@ -11,11 +11,11 @@ module Console =
   type keyinfo = System.ConsoleKeyInfo
 
   let inline clear () : unit = System.Console.Clear()
-  let inline read () : int = System.Console.Read()
+  let inline readl () : int = System.Console.Read()
   let inline readln () : string = System.Console.ReadLine()
   let inline readkey () : keyinfo = System.Console.ReadKey()
-  let inline printl<'a> (value:'a) : unit = System.Console.Write(value)
-  let inline println<'a> (value:'a) : unit = System.Console.WriteLine(value)
+  let inline writel<'a> (value:'a) : unit = System.Console.Write(value)
+  let inline writeln<'a> (value:'a) : unit = System.Console.WriteLine(value)
 
   let inline bgcolor (c: color) : unit = System.Console.BackgroundColor <- c
   let inline fgcolor (c: color) : unit = System.Console.ForegroundColor <- c
