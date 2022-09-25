@@ -1,6 +1,9 @@
 namespace com.midoliy.owl.io
 
-module Path =
+module FileSystem =
+  (*
+    Path class
+  *)
   val inline combine : array<string> -> string
 
   val inline root : string -> string
@@ -11,3 +14,14 @@ module Path =
 
   val inline ext : string -> string
   val inline has'ext : string -> bool
+
+  (*
+    File class
+  *)
+  val inline f'exists : string -> bool
+  val inline f'copy : string -> string -> string
+
+  (*
+    Directory class
+  *)
+  val inline d'exists : string -> bool

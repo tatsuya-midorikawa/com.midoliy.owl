@@ -2,7 +2,10 @@ namespace com.midoliy.owl.io
 
 open System.IO
 
-module Path =
+module FileSystem =
+  (*
+    Path class
+  *)
   let inline combine (pathes: array<string>) = Path.Combine pathes
 
   let inline root (path: string) = Path.GetPathRoot path
@@ -13,3 +16,14 @@ module Path =
   
   let inline ext (path: string) = Path.GetExtension path
   let inline has'ext (path: string) = Path.HasExtension path
+
+  (*
+    File class
+  *)
+  let inline f'exists (path: string) = File.Exists path
+  let inline f'copy (dst: string) (src: string) = File.Copy (src, dst); dst
+
+  (*
+    Directory class
+  *)
+  let inline d'exists (path: string) = Directory.Exists path
